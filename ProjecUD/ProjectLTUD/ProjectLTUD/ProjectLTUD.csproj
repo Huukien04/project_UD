@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F6F5D5E-C795-419D-A234-D9EEC852E986}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectLTUD</RootNamespace>
+    <AssemblyName>ProjectLTUD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectDatabase.cs" />
+    <Compile Include="ConnectionDatabase2.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClub.Designer.cs">
+      <DependentUpon>FormClub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMatches2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMatches2.Designer.cs">
+      <DependentUpon>FormMatches2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStats.Designer.cs">
+      <DependentUpon>FormStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMatchDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMatchDetail.Designer.cs">
+      <DependentUpon>FormMatchDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMatches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMatches.Designer.cs">
+      <DependentUpon>FormMatches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayers.Designer.cs">
+      <DependentUpon>FormPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayersInMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayersInMatch.Designer.cs">
+      <DependentUpon>FormPlayersInMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClubs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClubs.Designer.cs">
+      <DependentUpon>FormClubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStandings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStandings.Designer.cs">
+      <DependentUpon>FormStandings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\goal_batcheditor_fotor.jpg" />
+    <None Include="Resources\wolbig.png" />
+    <None Include="Resources\whubig.png" />
+    <None Include="Resources\totbig.png" />
+    <None Include="Resources\shubig.png" />
+    <None Include="Resources\nfobig.png" />
+    <None Include="Resources\newbig.png" />
+    <None Include="Resources\munbig.png" />
+    <None Include="Resources\mcibig.png" />
+    <None Include="Resources\lutbig.png" />
+    <None Include="Resources\livbig.png" />
+    <None Include="Resources\fulbig.png" />
+    <None Include="Resources\evebig.png" />
+    <None Include="Resources\crybig.png" />
+    <None Include="Resources\chebig.png" />
+    <None Include="Resources\burbig.png" />
+    <None Include="Resources\bhabig.png" />
+    <None Include="Resources\brebig.png" />
+    <None Include="Resources\boubig.png" />
+    <None Include="Resources\avlbia.png" />
+    <None Include="Resources\arsbig.png" />
+    <None Include="Resources\epllogo1.png" />
+    <None Include="Resources\epllogo.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\bre.png" />
+    <None Include="Resources\bha.png" />
+    <None Include="Resources\bur.png" />
+    <None Include="Resources\che.png" />
+    <None Include="Resources\cry.png" />
+    <None Include="Resources\eve.png" />
+    <None Include="Resources\ful.png" />
+    <None Include="Resources\lut.png" />
+    <None Include="Resources\mci.png" />
+    <None Include="Resources\mun.png" />
+    <None Include="Resources\newcastle.png" />
+    <None Include="Resources\nfo.png" />
+    <None Include="Resources\shu.png" />
+    <None Include="Resources\tot.png" />
+    <None Include="Resources\whu.png" />
+    <None Include="Resources\wol.png" />
+    <None Include="Resources\ars.png" />
+    <None Include="Resources\avl.png" />
+    <None Include="Resources\bou.png" />
+    <None Include="Resources\liv.png" />
+    <None Include="Resources\LogoClubs.bmp" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClub.resx">
+      <DependentUpon>FormClub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMatches2.resx">
+      <DependentUpon>FormMatches2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStats.resx">
+      <DependentUpon>FormStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMatchDetail.resx">
+      <DependentUpon>FormMatchDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMatches.resx">
+      <DependentUpon>FormMatches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayers.resx">
+      <DependentUpon>FormPlayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayersInMatch.resx">
+      <DependentUpon>FormPlayersInMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClubs.resx">
+      <DependentUpon>FormClubs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStandings.resx">
+      <DependentUpon>FormStandings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoepl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abeb5x8s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pl-main-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
